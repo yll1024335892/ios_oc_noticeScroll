@@ -13,6 +13,10 @@
 		A51E549B20A176EC00743BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51E549A20A176EC00743BAA /* Assets.xcassets */; };
 		A51E549E20A176EC00743BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51E549C20A176EC00743BAA /* LaunchScreen.storyboard */; };
 		A51E54A120A176EC00743BAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A51E54A020A176EC00743BAA /* main.m */; };
+		A51E54AE20A1805400743BAA /* GYRollingNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A51E54AB20A1805400743BAA /* GYRollingNoticeView.m */; };
+		A51E54AF20A1805400743BAA /* GYNoticeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A51E54AC20A1805400743BAA /* GYNoticeViewCell.m */; };
+		A51E54B520A1814E00743BAA /* CustomNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A51E54B420A1814E00743BAA /* CustomNoticeCell.m */; };
+		A51E54B720A1816200743BAA /* CustomNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51E54B620A1816200743BAA /* CustomNoticeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		A51E549D20A176EC00743BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51E549F20A176EC00743BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51E54A020A176EC00743BAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A51E54AA20A1805400743BAA /* GYNoticeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNoticeViewCell.h; sourceTree = "<group>"; };
+		A51E54AB20A1805400743BAA /* GYRollingNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYRollingNoticeView.m; sourceTree = "<group>"; };
+		A51E54AC20A1805400743BAA /* GYNoticeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNoticeViewCell.m; sourceTree = "<group>"; };
+		A51E54AD20A1805400743BAA /* GYRollingNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYRollingNoticeView.h; sourceTree = "<group>"; };
+		A51E54B320A1814E00743BAA /* CustomNoticeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNoticeCell.h; sourceTree = "<group>"; };
+		A51E54B420A1814E00743BAA /* CustomNoticeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNoticeCell.m; sourceTree = "<group>"; };
+		A51E54B620A1816200743BAA /* CustomNoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNoticeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 		A51E549020A176EB00743BAA /* gd */ = {
 			isa = PBXGroup;
 			children = (
+				A51E54A920A1804700743BAA /* xxxx */,
 				A51E549120A176EB00743BAA /* AppDelegate.h */,
 				A51E549220A176EB00743BAA /* AppDelegate.m */,
 				A51E549420A176EB00743BAA /* ViewController.h */,
@@ -67,8 +79,22 @@
 				A51E549C20A176EC00743BAA /* LaunchScreen.storyboard */,
 				A51E549F20A176EC00743BAA /* Info.plist */,
 				A51E54A020A176EC00743BAA /* main.m */,
+				A51E54B320A1814E00743BAA /* CustomNoticeCell.h */,
+				A51E54B420A1814E00743BAA /* CustomNoticeCell.m */,
+				A51E54B620A1816200743BAA /* CustomNoticeCell.xib */,
 			);
 			path = gd;
+			sourceTree = "<group>";
+		};
+		A51E54A920A1804700743BAA /* xxxx */ = {
+			isa = PBXGroup;
+			children = (
+				A51E54AA20A1805400743BAA /* GYNoticeViewCell.h */,
+				A51E54AC20A1805400743BAA /* GYNoticeViewCell.m */,
+				A51E54AD20A1805400743BAA /* GYRollingNoticeView.h */,
+				A51E54AB20A1805400743BAA /* GYRollingNoticeView.m */,
+			);
+			path = xxxx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +156,7 @@
 			files = (
 				A51E549E20A176EC00743BAA /* LaunchScreen.storyboard in Resources */,
 				A51E549B20A176EC00743BAA /* Assets.xcassets in Resources */,
+				A51E54B720A1816200743BAA /* CustomNoticeCell.xib in Resources */,
 				A51E549920A176EB00743BAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E54B520A1814E00743BAA /* CustomNoticeCell.m in Sources */,
+				A51E54AF20A1805400743BAA /* GYNoticeViewCell.m in Sources */,
+				A51E54AE20A1805400743BAA /* GYRollingNoticeView.m in Sources */,
 				A51E549620A176EB00743BAA /* ViewController.m in Sources */,
 				A51E54A120A176EC00743BAA /* main.m in Sources */,
 				A51E549320A176EB00743BAA /* AppDelegate.m in Sources */,

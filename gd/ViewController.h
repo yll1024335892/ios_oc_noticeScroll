@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GYRollingNoticeView.h"
+#import "CustomNoticeCell.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController<GYRollingNoticeViewDelegate,GYRollingNoticeViewDataSource>
+@property(nonatomic,strong)GYRollingNoticeView *noticeView;
+@property(nonatomic,strong)NSArray *arrData;
 @end
 
